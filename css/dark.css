@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* ================ */
+.bmi_body {
+  background: url(../images/bmi.jpg) no-repeat center / cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+.color_switcher {
+  position: absolute;
+  right: 100%;
+  transform: translateX(100%);
+  top: 300px;
+  display: flex;
+  color: #fff;
+  column-gap: 20px;
+  background: #ff6c6c;
+  padding: 10px;
+}
+
+.color_switcher p {
+  cursor: pointer;
+}
+
+.color_switcher h5 {
+  position: absolute;
+  background: #fb9700;
+  padding: 10px 15px;
+  top: 0;
+  height: 100%;
+  left: 100%;
+  cursor: pointer;
+}
+
+.bmi_body::after {
+  content: "";
+  background: #00000093;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+.bmi_body form {
+  display: inline-block;
+  background: #000000d9;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  padding: 50px 40px 30px 40px;
+  border-radius: 10px;
+  width: 430px;
+  backdrop-filter: blur(5px);
+  color: #c9c9c9;
+}
+
+.bmi_body form .icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.bmi_body form .icon .moon {
+  display: none;
+}
+.bmi_body form .icon .sun {
+  cursor: pointer;
+}
+
+.bmi_body form label {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  align-items: center;
+  position: relative;
+}
+
+.bmi_body form label .error {
+  position: absolute;
+  bottom: -20px;
+  left: 51%;
+  font-size: 10px;
+  transition: all linear 0.3s;
+}
+
+.bmi_body form input {
+  border: 1px solid #c5c5c586;
+  padding: 5px 10px;
+  color: #c9c9c9;
+  border-radius: 2px;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0;
+}
+.bmi_body form input:hover {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0;
+}
+
+.bmi_body form button {
+  border: 0;
+  background: #0065d8;
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.bmi_body form .result {
+  margin: 18px 0 4px 0;
+}
+
+.bmi_body form .result .point {
+  color: #00c200;
+  font-weight: 700;
+  font-size: 24px;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}

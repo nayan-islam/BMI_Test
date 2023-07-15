@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* ================ */
+.bmi_body {
+  background: url(../images/bmi.jpg) no-repeat center / cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+  color: rgb(65, 65, 65);
+}
+.bmi_body::after {
+  content: "";
+  background: #00000093;
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+.bmi_body form {
+  display: inline-block;
+  background: #ffffffaa;
+  color: #000000;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  padding: 50px 40px 30px 40px;
+  border-radius: 10px;
+  width: 430px;
+  backdrop-filter: blur(5px);
+}
+
+.bmi_body form .icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.bmi_body form .icon .moon {
+  cursor: pointer;
+}
+
+.bmi_body form label {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  align-items: center;
+  position: relative;
+}
+
+.bmi_body form label .error {
+  position: absolute;
+  bottom: -20px;
+  left: 51%;
+  font-size: 10px;
+  transition: all linear 0.3s;
+}
+
+.bmi_body form input {
+  border: 1px solid #9d9d9d86;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  outline: 0;
+}
+
+.bmi_body form button {
+  border: 0;
+  background: #88c0ff;
+  color: #252525;
+  padding: 7px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.bmi_body form .result {
+  margin: 18px 0 4px 0;
+}
+
+.bmi_body form .result .point {
+  color: #66ff66;
+  font-weight: 700;
+  font-size: 24px;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+}

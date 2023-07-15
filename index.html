@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/dark.css" class="dark" />
+  </head>
+  <body>
+    <div class="bmi_body">
+      <form>
+        <div class="icon">
+          <i onclick="" class="fa-solid fa-sun sun"></i>
+          <i class="fa-solid fa-moon moon"></i>
+        </div>
+
+        <h2>Test your BMI</h2>
+        <label for="height"
+          ><p>Enter your height (foot)</p>
+          <input id="height" type="number" placeholder="Height" />
+          <p class="height_erorr error"></p>
+        </label>
+        <label for="weight"
+          ><p>Enter your weight (kg)</p>
+          <input id="weight" type="number" placeholder="Weight" />
+          <p class="weight_erorr error"></p>
+        </label>
+
+        <button type="button" class="submit">Test</button>
+        <button type="reset" onclick="reload()" class="clear">Clear</button>
+
+        <h4 class="result"></h4>
+        <p class="massage"></p>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
